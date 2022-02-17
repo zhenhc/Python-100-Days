@@ -28,11 +28,11 @@ def main():
     # 1.创建套接字对象并指定使用哪种传输服务
     server = socket()
     # 2.绑定IP地址和端口(区分不同的服务)
-    server.bind(('192.168.1.2', 5566))
+    server.bind(('192.168.1.11', 5566))
     # 3.开启监听 - 监听客户端连接到服务器
     server.listen(512)
     print('服务器启动开始监听...')
-    with open('guido.jpg', 'rb') as f:
+    with open('D:\developer\IDE\idea-projects\python\Python-100-Days\Day01-15\code\Day14\guido.jpg', 'rb') as f:
         # 将二进制数据处理成base64再解码成字符串
         data = b64encode(f.read()).decode('utf-8')
     while True:

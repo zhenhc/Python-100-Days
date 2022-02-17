@@ -7,7 +7,7 @@ Date: 2018-03-13
 """
 
 birth = input('请输入你的生日: ')
-with open('pi_million_digits.txt') as f:
+with open('D:\developer\IDE\idea-projects\python\Python-100-Days\Day01-15\code\Day11\pi_million_digits.txt') as f:
     lines = f.readlines()
     pi_string = ''
     for line in lines:

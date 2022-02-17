@@ -11,7 +11,7 @@ import time
 
 def main():
     # 一次性读取整个文件内容
-    with open('致橡树.txt', 'r', encoding='utf-8') as f:
+    with open('./致橡树.txt', 'r', encoding='utf-8') as f:
         print(f.read())
 
     # 通过for-in循环逐行读取
